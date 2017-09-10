@@ -20,7 +20,14 @@ class ViewController: UIViewController {
     
     @IBAction func PushMe(_ sender: Any) {
         
-        TheLabel.text =  "Answer is...\(Double(Text1.text!)! + Double(Text2.text!)!)"
+        let addition = true
+        
+        if addition {
+            TheLabel.text =  "Answer is...\(Double(Text1.text!)! + Double(Text2.text!)!)"
+        } else {
+            TheLabel.text =  "Answer is...\(Double(Text1.text!)! - Double(Text2.text!)!)"
+            
+        }
         
        // print(Text1)
         //print(Text1.text!)
