@@ -12,17 +12,20 @@ class ViewController: UIViewController {
     
       @IBOutlet weak var TheLabel: UILabel!
     
+    @IBOutlet weak var Text1: UITextField!
+    
+    @IBOutlet weak var Text2: UITextField!
+    
     var tapCount = 0
     
     @IBAction func PushMe(_ sender: Any) {
         
-        tapCount = tapCount + 1
+        TheLabel.text =  "Answer is...\(Double(Text1.text!)! + Double(Text2.text!)!)"
         
-        if tapCount >= 10 {
-            TheLabel.text = " You tapped the butotn 10 times"
-        }
+       // print(Text1)
+        //print(Text1.text!)
+        //print(Text2.text!)
         
-      
         
     }
   
